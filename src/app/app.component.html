@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="col-sm-12">
+    <app-menu-bar></app-menu-bar>
+
+
+  </div>
+</div>
+
+<hr>
+
+
+
+
+<div class="container">
+  <div class="col-xs-12">
+    <h4>Manage Student</h4>
+
+
+
+    <table class="table-bordered">
+      <thead>
+      <tr>
+        <th scope="col"> studentId </th>
+        <th scope="col">  studentName </th>
+        <th scope="col"> studentSurname </th>
+        <th scope="col"> studentAddress  </th>
+
+      </tr>
+
+      <tr *ngFor="let student of studentList">
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.surname}}</td>
+        <td>{{student.address}}</td>
+
+
+
+      </tr>
+      </thead>
+
+    </table>
+
+
+  </div>
+
+</div>
+
+<hr>
+
+
+<div class="container">
+  <div class="col-xs-12">
+    <hr>
+    <form (ngSubmit)="AddStudent()">
+
+      <div>
+        <label for="Id">id</label>
+        <input type="number" Id="id" class="form-check" [(ngModel)]="newStudentList.id" name="id" >
+      </div>
+
+      <div>
+        <label for="Id"> name</label>
+        <input type="text" Id="name" class="form-check" [(ngModel)]="newStudentList.name" name="name">
+      </div>
+
+      <div>
+        <label for="Id">surname</label>
+        <input type="text" Id="Surname" class="form-check" [(ngModel)]="newStudentList.surname" name="surname">
+      </div>
+
+      <div>
+        <label for="Id">address</label>
+        <input type="number" Id="address" class="form-check" [(ngModel)]="newStudentList.address" name="address">
+      </div>
+
+
+      <button class="btn btn-success" type="submit">Add Student</button>
+
+
+    </form>
+
+
+  </div>
+
+</div>

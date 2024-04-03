@@ -1,0 +1,17 @@
+h4 {
+  font-size: 3.125rem;
+  /*color: var(--gray-900);*/
+  font-weight: 100;
+  line-height: 50%;
+  letter-spacing: -0.125rem;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+table {
+
+  margin-top: 20px;
+  font-size: 22px;
+  padding-top: 2px;
+  border-bottom-right-radius: 20px;
+}
